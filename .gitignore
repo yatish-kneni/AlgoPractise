@@ -6,3 +6,4 @@
 /Testing/Testing/obj
 *.suo
 /.vs
+/Testing/.vs/Testing/DesignTimeBuild/.dtbcache.v2

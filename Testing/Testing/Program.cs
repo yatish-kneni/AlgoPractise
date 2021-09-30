@@ -7,7 +7,7 @@ namespace Testing
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            TestMissing();
+            TestMergeSort();
         }
 
         static void TestLis()
@@ -51,6 +51,17 @@ namespace Testing
             var testI2 = new int[] { 1, 2, 3, 4, 6 };
             var testI3 = new int[] { 1, 2, 3, 4, 5, 6 };
             var result = t.Missing(testI3);
+            Console.ReadLine();
+        }
+
+        static void TestMergeSort()
+        {
+            var t = new MergeSort();
+            var testI = new int[] { 12, 12, 23, 4, 6, 6, 10, -35, 28 };
+            int[] test2 = { 12, 12, 12, 12, 12 };
+
+            var result = t.PerformMergeSort(testI);
+            var result2 = t.PerformMergeSort(test2);
             Console.ReadLine();
         }
     }
